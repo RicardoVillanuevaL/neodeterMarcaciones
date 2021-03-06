@@ -142,5 +142,14 @@ class PreferenciasUsuario {
     _prefs.setString('empleado_ultimo_ingreso',transformar(value));
   }
 
+  
+  get idEmpresa{
+    return _prefs.getString('empleado_ultimo_ingreso');
+  }
+
+  set idEmpresa(String value){
+    _prefs.setString('empleado_ultimo_ingreso',value);
+  }
+
 }
 

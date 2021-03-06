@@ -1,7 +1,3 @@
-// To parse this JSON data, do
-//
-//     final subordinadosModel = subordinadosModelFromJson(jsonString);
-
 import 'dart:convert';
 
 List<SubordinadosModel> subordinadosModelFromJson(String str) => List<SubordinadosModel>.from(json.decode(str).map((x) => SubordinadosModel.fromJson(x)));
